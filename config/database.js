@@ -2,7 +2,9 @@ const mongoose = require('mongoose');
 
 module.exports = async () => {
   await mongoose
-    .connect(process.env.MONGO_URL)
+    .connect(
+      'mongodb+srv://ntzolov:zZYLb8iwd7rDyaac@movie-characters.vtrawke.mongodb.net/movieCharacters?retryWrites=true&w=majority'
+    )
     .then(() => {
       console.log('Connected to MongoDB');
     })
