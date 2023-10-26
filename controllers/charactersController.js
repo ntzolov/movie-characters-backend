@@ -11,6 +11,10 @@ router.get('/', async (req, res) => {
       characters.push({ error: 'Not characters found!' });
     }
 
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
     return res.status(200).json(characters);
   } catch (error) {
     return res.status(406).json({ message: mongoErrorHandler(error) });

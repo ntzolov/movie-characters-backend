@@ -1,6 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const secret = process.env.SECRET;
+const secret = 'mG8tdLPPNJ0wpEOI0DnKz5YCEuJMbcGp';
 const { mongoErrorHandler } = require('../utils/mongoErrorHandler');
 
 const router = require('express').Router();
@@ -73,12 +73,12 @@ router.get('/logout', (req, res) => {});
 
 module.exports = router;
 
-      // if (sort === 'nameAZ') {
-      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: 1 });
-      // } else if (sort === 'nameZA') {
-      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: -1 });
-      // } else if (sort === 'mostLiked') {
-      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ likes: 1 });
-      // } else {
-      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } });
-      // }
+// if (sort === 'nameAZ') {
+//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: 1 });
+// } else if (sort === 'nameZA') {
+//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: -1 });
+// } else if (sort === 'mostLiked') {
+//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ likes: 1 });
+// } else {
+//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } });
+// }
