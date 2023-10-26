@@ -1,6 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const secret = 'mG8tdLPPNJ0wpEOI0DnKz5YCEuJMbcGp';
+const secret = process.env.SECRET;
 const { mongoErrorHandler } = require('../utils/mongoErrorHandler');
 
 const router = require('express').Router();
