@@ -8,11 +8,11 @@ module.exports = async (app) => {
   app.use(express.json({ extended: true }));
   app.use(
     cors({
-      origin: 'https://movie-characters.onrender.com',
+      origin: true,
       credentials: true,
     })
   );
-  app.options('*', cors());
+  // app.options('*', cors());
 
   app.listen(port, () => console.log(`Server is listening on port ${port}...`));
 };
