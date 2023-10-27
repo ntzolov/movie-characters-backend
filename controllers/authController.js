@@ -46,6 +46,16 @@ router.post('/register', async (req, res) => {
   }
 });
 
+router.options('/login', async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Auth');
+  res.setHeader('access-control-expose-headers', 'Set-Cookie');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+
+  return res.status(200);
+});
+
 router.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
