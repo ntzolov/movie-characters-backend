@@ -34,6 +34,10 @@ router.post('/register', async (req, res) => {
       token,
     };
 
+    res.header('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
+    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
     return res.status(200).json(result);
   } catch (error) {
     return res.status(406).json({ message: mongoErrorHandler(error) });
@@ -62,6 +66,10 @@ router.post('/login', async (req, res) => {
       isAdmin: user.isAdmin,
       token,
     };
+
+    res.header('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
+    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     return res.status(200).json(result);
   } catch (error) {
