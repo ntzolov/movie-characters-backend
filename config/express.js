@@ -18,7 +18,7 @@ module.exports = async (app) => {
   // app.options('*', cors());
 
   const corsOptions = {
-    origin: true,
+    origin: 'https://movie-characters.onrender.com',
     credentials: true,
   };
   app.options('*', cors(corsOptions));
