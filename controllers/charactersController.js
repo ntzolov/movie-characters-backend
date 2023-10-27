@@ -11,9 +11,9 @@ router.get('/', async (req, res) => {
       characters.push({ error: 'Not characters found!' });
     }
 
-    res.header('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
-    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.setHeader('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     return res.status(200).json(characters);
   } catch (error) {
