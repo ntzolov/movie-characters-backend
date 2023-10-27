@@ -17,5 +17,11 @@ module.exports = async (app) => {
   // );
   // app.options('*', cors());
 
+  const corsOptions = {
+    origin: true,
+    credentials: true,
+  };
+  app.options('*', cors(corsOptions));
+
   app.listen(port, () => console.log(`Server is listening on port ${port}...`));
 };
