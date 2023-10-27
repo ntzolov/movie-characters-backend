@@ -34,12 +34,6 @@ router.post('/register', async (req, res) => {
       token,
     };
 
-    // res.setHeader('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
-    // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS');
-    // res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Auth');
-    // res.setHeader('access-control-expose-headers', 'Set-Cookie');
-    // res.setHeader('Access-Control-Allow-Credentials', true);
-
     return res.status(200).json(result);
   } catch (error) {
     return res.status(406).json({ message: mongoErrorHandler(error) });
@@ -69,12 +63,6 @@ router.post('/login', async (req, res) => {
       token,
     };
 
-    // res.setHeader('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
-    // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS');
-    // res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Auth');
-    // res.setHeader('access-control-expose-headers', 'Set-Cookie');
-    // res.setHeader('Access-Control-Allow-Credentials', true);
-
     return res.status(200).json(result);
   } catch (error) {
     return res.status(406).json({ message: mongoErrorHandler(error) });
@@ -85,12 +73,12 @@ router.get('/logout', (req, res) => {});
 
 module.exports = router;
 
-// if (sort === 'nameAZ') {
-//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: 1 });
-// } else if (sort === 'nameZA') {
-//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: -1 });
-// } else if (sort === 'mostLiked') {
-//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ likes: 1 });
-// } else {
-//   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } });
-// }
+      // if (sort === 'nameAZ') {
+      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: 1 });
+      // } else if (sort === 'nameZA') {
+      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ name: -1 });
+      // } else if (sort === 'mostLiked') {
+      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } }).sort({ likes: 1 });
+      // } else {
+      //   characters = await Character.find({ usersLiked: userId, name: { $regex: search, $options: 'i' } });
+      // }
