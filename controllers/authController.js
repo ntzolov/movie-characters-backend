@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
     };
 
     res.setHeader('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     return res.status(200).json(result);
@@ -68,7 +68,7 @@ router.post('/login', async (req, res) => {
     };
 
     res.setHeader('Access-Control-Allow-Origin', 'https://movie-characters.onrender.com');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     return res.status(200).json(result);
