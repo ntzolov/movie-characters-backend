@@ -1,7 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const { corsMiddleware } = require('../middlewares/corsMiddleware');
+const corsMiddleware = require('../middlewares/corsMiddleware');
+
 const port = process.env.PORT || 3030;
 
 module.exports = async (app) => {
