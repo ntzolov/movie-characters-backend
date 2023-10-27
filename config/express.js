@@ -8,7 +8,7 @@ const port = process.env.PORT || 3030;
 module.exports = async (app) => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json({ extended: true }));
-  app.use(corsMiddleware);
+  // app.use(corsMiddleware);
   // app.use(
   //   cors({
   //     origin: 'https://movie-characters.onrender.com',
