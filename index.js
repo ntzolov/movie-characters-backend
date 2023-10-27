@@ -15,7 +15,6 @@ const initializeServer = async (app) => {
   try {
     await databaseConnect();
     serverConnect(app);
-    console.log(process.env.TEST, process.env.TEST2);
   } catch (error) {
     console.log(error);
     process.exit(1);

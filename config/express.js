@@ -9,6 +9,7 @@ module.exports = async (app) => {
   app.use(
     cors({
       origin: 'https://movie-characters.onrender.com',
+      credentials: true,
     })
   );
   app.options('*', cors());
