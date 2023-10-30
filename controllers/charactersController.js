@@ -1,3 +1,4 @@
+const { authMiddleware } = require('../middlewares/authMiddleware');
 const Character = require('../models/Character');
 const charactersQueryLogic = require('../utils/charactersQueryLogic');
 const { mongoErrorHandler } = require('../utils/mongoErrorHandler');
@@ -17,7 +18,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', authMiddleware, async (req, res) => {
   try {
     const character = await Character.create({ ...req.body });
     return res.status(200).json(character);
@@ -26,7 +27,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:characterId', async (req, res) => {
+router.put('/:characterId', authMiddleware, async (req, res) => {
   try {
     const { characterId } = req.params;
     const characterBody = { ...req.body };
@@ -51,7 +52,7 @@ router.get('/:characterId', async (req, res) => {
   }
 });
 
-router.delete('/:characterId', async (req, res) => {
+router.delete('/:characterId', authMiddleware, async (req, res) => {
   try {
     const { characterId } = req.params;
 
