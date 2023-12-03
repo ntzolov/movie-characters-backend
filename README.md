@@ -25,7 +25,7 @@ This is a backend application that powers the core functionality of http://movie
 | **nodemon**    | v3.0.1     | Utility that monitors for changes in files and automatically restarts the server |
 
 
-## Installation <a name="installation"></a>
+## Installation 🔽 <a name="installation"></a>
 
 Follow these steps to set up and run the BackendService locally on your machine.
 
@@ -66,7 +66,7 @@ npm start
 
 The backend server will be running at http://localhost:3030.
 
-## Usage <a name="usage"></a>
+## Usage 💡 <a name="usage"></a>
 
 ### Authentication
 
@@ -92,7 +92,7 @@ To use the authentication features of BackendService, you need to obtain an auth
 - ####  DELETE /characters/:characterId
   - Delete character by ID.
 
-## Database schema <a name="database-schema"></a>
+## Database schema 📃 <a name="database-schema"></a>
 
 ### Users Collection
 
@@ -128,7 +128,7 @@ The `resources` collection holds data about various characters.
 | lastEdit    | Date     | Date of character's last edit |
 | _ownerUsername | String   | Character's owner username |
 
-## License <a name="license"></a>
+## License 📝 <a name="license"></a>
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
