@@ -3,16 +3,27 @@
 
 This is a backend application that powers the core functionality of http://movie-characters.onrender.com webside. It handles user authentication, data processing, and serves as the API gateway for seamless communication with the frontend.
 
-## Technology Stack
+## Table of Contents
 
-- **Node.js:** v14.17.4
-- **Express:** v4.18.2 - Fast, unopinionated, minimalist web framework for Node.js.
-- **Mongoose:** v7.5.3 - Elegant MongoDB object modeling for Node.js.
-- **bcrypt:** v5.1.1 - Library for hashing passwords.
-- **jsonwebtoken:** v9.0.2 - JSON Web Token (JWT) implementation for Node.js.
-- **cors:** v2.8.5 - Cross-Origin Resource Sharing middleware for Express.
-- **dotenv:** v16.3.1 - Zero-dependency module to load environment variables from a .env file.
-- **nodemon:** v3.0.1 - Utility that monitors for changes in files and automatically restarts the server.
+1. [Technology Stack](#technology-stack)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Database Schema](#database-schema)
+5. [License](#license)
+
+## Technology Stack 🛠️
+
+| Technology     | Version    | Description                                       |
+| -------------- | ---------- | ------------------------------------------------- |
+| **Node.js**    | v14.17.4   | JavaScript runtime built on Chrome's V8 engine   |
+| **Express**    | v4.18.2    | Fast, unopinionated, minimalist web framework for Node.js |
+| **Mongoose**   | v7.5.3     | Elegant MongoDB object modeling for Node.js      |
+| **bcrypt**     | v5.1.1     | Library for hashing passwords                     |
+| **jsonwebtoken** | v9.0.2   | JSON Web Token (JWT) implementation for Node.js   |
+| **cors**       | v2.8.5     | Cross-Origin Resource Sharing middleware for Express |
+| **dotenv**     | v16.3.1    | Zero-dependency module to load environment variables from a .env file |
+| **nodemon**    | v3.0.1     | Utility that monitors for changes in files and automatically restarts the server |
+
 
 ## Installation
 
@@ -55,7 +66,7 @@ npm start
 
 The backend server will be running at http://localhost:3030.
 
-## Usage
+## Usage <a name="usage"></a>
 
 ### Authentication
 
@@ -81,7 +92,7 @@ To use the authentication features of BackendService, you need to obtain an auth
 - ####  DELETE /characters/:characterId
   - Delete character by ID.
 
-## Database schema
+## Database schema <a name="database-schema"></a>
 
 ### Users Collection
 
@@ -117,7 +128,7 @@ The `resources` collection holds data about various characters.
 | lastEdit    | Date     | Date of character's last edit |
 | _ownerUsername | String   | Character's owner username |
 
-## License
+## License <a name="license"></a>
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
