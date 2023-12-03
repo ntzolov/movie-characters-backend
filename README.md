@@ -11,7 +11,7 @@ This is a backend application that powers the core functionality of http://movie
 4. [Database Schema](#database-schema)
 5. [License](#license)
 
-## Technology Stack 🛠️
+## Technology Stack 🛠️ <a name="technology-stack"></a>
 
 | Technology     | Version    | Description                                       |
 | -------------- | ---------- | ------------------------------------------------- |
@@ -25,7 +25,7 @@ This is a backend application that powers the core functionality of http://movie
 | **nodemon**    | v3.0.1     | Utility that monitors for changes in files and automatically restarts the server |
 
 
-## Installation
+## Installation <a name="installation"></a>
 
 Follow these steps to set up and run the BackendService locally on your machine.
 
