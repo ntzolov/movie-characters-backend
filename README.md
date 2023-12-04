@@ -3,7 +3,7 @@
 
 [Link to FrontendService](https://github.com/ntzolov/movie-characters-client)
 
-This is a backend application that powers the core functionality of http://movie-characters.onrender.com webside. It handles user authentication, data processing, and serves as the API gateway for seamless communication with the frontend.
+This is a backend application that powers the core functionality of http://movie-characters.onrender.com website. It handles user authentication, data processing, and serves as the API gateway for seamless communication with the frontend.
 
 ## Table of Contents
 
