@@ -55,8 +55,8 @@ npm install
 Create a .env file in the root of the project and add the following:
 
 ```env
-SECRET = 'mG8tdLPPNJ0wpEOI0DnKz5YCEuJMbcGp'
-MONGO_URL = 'mongodb+srv://ntzolov:zZYLb8iwd7rDyaac@movie-characters.vtrawke.mongodb.net/movieCharacters?retryWrites=true&w=majority'
+SECRET = '<*****>'
+MONGO_URL = 'mongodb+srv://ntzolov:<*****>@movie-characters.vtrawke.mongodb.net/movieCharacters?retryWrites=true&w=majority'
 PORT = '3030'
 ```
 
